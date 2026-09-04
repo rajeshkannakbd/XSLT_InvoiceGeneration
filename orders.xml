@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="orders.xsl"?>
+
+<orders xmlns:ord="http://example.com/orders" xmlns:cust="http://example.com/customers" xmlns:prod="http://example.com/products" xmlns:ship="http://example.com/shipping" > 
+  <ord:order id="001"> 
+    <orderdate>27 AUG</orderdate> 
+    <status>ON PROCESS</status> 
+    <cust:customer> 
+      <cust:name>Rajesh</cust:name> 
+      <cust:email>rajeshkanna@gmail.com</cust:email> 
+      <cust:address> 
+        <cust:city>Trichy</cust:city> 
+        <cust:state>Tamilnadu</cust:state> 
+      </cust:address> 
+    </cust:customer> 
+    <prod:products> 
+    <prod:product id="1"> 
+      <prod:name>DELL Laptop</prod:name> 
+      <prod:category>Laptop</prod:category> 
+      <prod:stock>21</prod:stock> 
+      <prod:price>70000</prod:price> 
+      <prod:quantity>2</prod:quantity> 
+    </prod:product> 
+    <prod:product id="2"> 
+      <prod:name>LOGITECH MOUSE</prod:name> 
+      <prod:category>MOUSE</prod:category> 
+      <prod:stock>8</prod:stock> 
+      <prod:price>3000</prod:price> 
+      <prod:quantity>2</prod:quantity> 
+    </prod:product> 
+    <prod:product id="3"> 
+      <prod:name>MOUSE PAD</prod:name> 
+      <prod:category>Acsseories</prod:category> 
+      <prod:stock>30</prod:stock> 
+      <prod:price>500</prod:price> 
+      <prod:quantity>2</prod:quantity> 
+    </prod:product> 
+    </prod:products> 
+    <payment> 
+      <method>UPI</method> 
+    </payment> 
+    <ship:shipping> 
+     <ship:address> 
+      <ship:city>Trichy</ship:city> 
+      <ship:state>Tamil Nadu</ship:state> 
+     </ship:address> 
+    </ship:shipping> 
+  </ord:order> 
+    <ord:order id="002"> 
+    <orderdate>2 SEP</orderdate> 
+    <status>DELIVERED</status> 
+    <cust:customer> 
+      <cust:name>Kanna</cust:name> 
+      <cust:email>kanna@gmail.com</cust:email> 
+      <cust:address> 
+        <cust:city>Banglore</cust:city> 
+        <cust:state>Karnataka</cust:state> 
+      </cust:address> 
+    </cust:customer> 
+    <prod:products> 
+    <prod:product id="1"> 
+      <prod:name>I phone</prod:name> 
+      <prod:category>Mobile</prod:category> 
+      <prod:stock>1</prod:stock> 
+      <prod:price>150000</prod:price> 
+      <prod:quantity>2</prod:quantity> 
+    </prod:product> 
+        <prod:product id="2"> 
+      <prod:name>BACK COVER</prod:name> 
+      <prod:category>Acsseories</prod:category> 
+      <prod:stock>8</prod:stock> 
+      <prod:price>300</prod:price> 
+      <prod:quantity>2</prod:quantity> 
+    </prod:product> 
+    <prod:product id="3"> 
+      <prod:name>TEMPER GLASS</prod:name> 
+      <prod:category>Acsseories</prod:category> 
+      <prod:stock>30</prod:stock> 
+      <prod:price>500</prod:price> 
+      <prod:quantity>2</prod:quantity> 
+    </prod:product> 
+    </prod:products> 
+    <payment> 
+      <method>CASH ON DELIVERY</method> 
+    </payment> 
+    <ship:shipping> 
+     <ship:address> 
+      <ship:city>Mysuru</ship:city> 
+      <ship:state>Karnataka</ship:state> 
+     </ship:address> 
+    </ship:shipping> 
+  </ord:order> 
+</orders>
